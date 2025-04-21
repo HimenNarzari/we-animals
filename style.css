@@ -8,10 +8,19 @@ body {
     font-family: Arial, sans-serif;
 }
 
+@font-face {
+    font-family: 'Darling Coffee';
+    src: url('darling_coffee/Darling Coffee.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+/* navbar */
+
 header {
     background: #000;
     color: white;
-    padding: 10px 5%;
+    padding: 10px 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,54 +52,67 @@ header nav .btn svg{
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background: #000;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        width: 150px;
-        border: 1px solid #333;
-        border-radius: 5px;
-        z-index: 1000;
-    }
-
-    .nav-links a{
-        margin: 5px 10px;
-    }
-
-    .nav-links .btn{
-        width:85%;
-        margin-left:10px;
-        margin-bottom:5px;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: block;
-        margin-bottom:20px;
-    }
-}
+/* image-slider */
 
 .hero {
     background: #444;
-    color: white;
-    padding: 40px 20px;
-    text-align: center;
+    width: 100%;
+    margin: auto;
+    display: block;
+    inset: 0px;
+    padding: inherit;
+    aspect-ratio: 16/9;
+    max-height: 450px;;
 }
 
-.hero h1 span {
-    color: yellow;
+/* about-section */
+
+iframe{
+    border-radius: 10px;
+    margin:10px 0;
 }
 
 .section {
-    padding: 40px 20px;
+    padding: 40px 10%;
     text-align: center;
+}
+
+.section p{
+    padding-bottom: 5px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: start;
+    font-size: 14px;
+    width:100%;
+}
+
+.about-section{
+    width:100%;
+    height:fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-section div{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+h2{
+    color:#e40f24;
+    font-weight: 700;
+    font-family: "Darling Coffee";
+    font-size: 3rem;
+    margin:30px
+}
+
+h3 span{
+    color:#fecd2f
 }
 
 .impact {
@@ -105,6 +127,12 @@ header nav .btn svg{
     padding: 20px;
     border-radius: 8px;
     min-width: 150px;
+}
+
+
+.impact div strong{
+    font-size:30px;
+    color:#fecd2f;
 }
 
 .services img {
@@ -159,4 +187,56 @@ footer a {
     margin: 0 5px;
     text-decoration: none;
     color: #000;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #000;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 150px;
+        border: 1px solid #333;
+        border-radius: 5px;
+        z-index: 1000;
+    }
+
+    .nav-links a{
+        margin: 5px 10px;
+    }
+
+    .nav-links .btn{
+        width:85%;
+        margin-left:10px;
+        margin-bottom:5px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-bottom:20px;
+    }
+
+    /* hero-section */
+
+    .about-section{
+        flex-direction: column;
+    }
+
+    .hero{
+        max-height: none;
+    }
+
+    iframe{
+    max-width: 100%;
+   }
+
+   .about-section div{
+    width:100%;
+   }
 }
