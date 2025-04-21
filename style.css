@@ -57,12 +57,22 @@ header nav .btn svg{
         z-index: 1000;
     }
 
+    .nav-links a{
+        margin: 5px 10px;
+    }
+
+    .nav-links .btn{
+        width:85%;
+        margin-left:10px;
+    }
+
     .nav-links.active {
         display: flex;
     }
 
     .menu-toggle {
         display: block;
+        margin-bottom:20px;
     }
 }
 
