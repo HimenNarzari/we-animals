@@ -5,7 +5,7 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 @font-face {
@@ -92,6 +92,7 @@ iframe{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .about-section div{
@@ -100,7 +101,12 @@ iframe{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
+    padding-left:20px;
+}
+#iframe{
+    aspect-ratio: 16/9;
+    width:50%;
 }
 
 h2{
@@ -188,6 +194,20 @@ footer a {
     text-decoration: none;
     color: #000;
 }
+@media (max-width: 1320px){
+    .about-section{
+        flex-direction: column;
+    }
+    .about-section div{
+        padding-right:0;
+        width:100%;
+    }
+    iframe{
+        height:291px;
+        min-width:517px;
+        margin-bottom:20px;
+    }
+}
 
 @media (max-width: 768px) {
     .nav-links {
@@ -196,7 +216,7 @@ footer a {
         background: #000;
         position: absolute;
         top: 60px;
-        right: 20px;
+        right: 10%;
         width: 150px;
         border: 1px solid #333;
         border-radius: 5px;
@@ -233,10 +253,13 @@ footer a {
     }
 
     iframe{
-    max-width: 100%;
-   }
+        height:100%;
+        min-width:100%;
+        margin-bottom:20px;
+    }
 
    .about-section div{
     width:100%;
+    padding-left:0;
    }
 }
