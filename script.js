@@ -6,7 +6,7 @@ const options = {
 
 const animateCount = (el) => {
   const target = +el.getAttribute('data-target');
-  const speed = 50; // lower = faster
+  const speed = 100; // lower = faster
 
   const update = () => {
     const current = +el.innerText;
