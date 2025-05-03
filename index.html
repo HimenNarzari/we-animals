@@ -11,16 +11,25 @@
 </head>
 
 <body>
+    <div id="preloader">
+        <div class="preloader-content">
+            <img src="dog_running2.gif" alt="Loading..." />
+            <p class="loading-text">Loading...</p>
+        </div>
+    </div>
+
+
     <header>
         <div><img src="we-animals-logo.png" alt="logo"></div>
         <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')">
             <i class="fas fa-bars"></i>
         </button>
         <nav class="nav-links">
-            <a href="#">About</a>
-            <a href="#">Our work</a>
-            <a href="#">Help us</a>
-            <a href="#">Services</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#dog">Help us</a>
+            <a href="#work">Our work</a>
+
             <button class="btn">Donate<svg xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
                     <path
@@ -33,7 +42,7 @@
 
     </section>
 
-    <section class="section">
+    <section id="about" class="section">
         <h2>ABOUT</h2>
         <div class="about-section">
             <iframe id="iframe" src="https://www.youtube.com/embed/iiHTZSdemYQ?si=MNP4q4yNbAkjVoqx"
@@ -57,15 +66,14 @@
         </div>
         <h3>Our <span>IMPACT</span> So Far</h3>
         <div class="impact">
-            <div><i class="fa-solid fa-syringe pulse fa-4x"></i><strong class="count" data-target="1000">0</strong><br>Vaccinations Done</div>
-            <div><i class="fa-solid fa-kit-medical pulse fa-4x"></i><strong class="count" data-target="1500">0</strong><br>Rescues Done</div>
-            <div><i class="fa-solid fa-dog pulse fa-4x"></i><strong class="count" data-target="90">0</strong><br>Adoptions/month</div>
-            <div><i class="fa-solid fa-bowl-food pulse fa-4x"></i><strong class="count" data-target="500">0</strong><br>Dogs Fed</div>
+            <div><i class="fa-solid fa-syringe pulse fa-4x"></i><strong>1,000+</strong><br>Vaccinations Done</div>
+            <div><i class="fa-solid fa-kit-medical pulse fa-4x"></i><strong>1,500+</strong><br>Rescues Done</div>
+            <div><i class="fa-solid fa-dog pulse fa-4x"></i><strong>90+/month</strong><br>Adoptions</div>
+            <div><i class="fa-solid fa-bowl-food pulse fa-4x"></i><strong>500+</strong><br>Dogs Fed</div>
         </div>
-        
     </section>
 
-    <section class="section services">
+    <section id="services" class="section services">
         <h2>SERVICES</h2>
         <div class="impact">
             <div>
@@ -81,22 +89,43 @@
         </div>
     </section>
 
-    <section class="help">
-        <h2>HELP US</h2>
-        <p>We rescue, treat, and care for injured, abandoned, and abused animals. Be part of their second chance.</p>
-        <button class="btn">Donate</button>
-        <button class="btn">Adopt</button>
-        <button class="btn">Volunteer</button>
+    <div id="dogs" class="dogs">
+        <img src="dogs_.png" alt="">
+    </div>
+
+    <section id="help" class="help">
+        <h2 style="text-align: center;">HELP US MAKE A DIFFERENCE</h2>
+        <p style="width:80%">Every day, countless animals suffer alone — abandoned, injured, or abused.
+            At We Animals Tezpur, we step in where no one else will — to rescue, heal, and give them the love they
+            deserve.
+
+            Your support can mean the world to a voiceless soul.
+            🧡 Join hands with us — volunteer, donate, adopt, or simply spread the word. 🧡</p>
+        <div class="help-btn-container">
+            <button class="btn">Donate<svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path
+                        d="M224 24l0 56-56 0c-13.3 0-24 10.7-24 24l0 48c0 13.3 10.7 24 24 24l56 0 0 56c0 13.3 10.7 24 24 24l48 0c13.3 0 24-10.7 24-24l0-56 56 0c13.3 0 24-10.7 24-24l0-48c0-13.3-10.7-24-24-24l-56 0 0-56c0-13.3-10.7-24-24-24L248 0c-13.3 0-24 10.7-24 24zM559.7 392.2c17.8-13.1 21.6-38.1 8.5-55.9s-38.1-21.6-55.9-8.5L392.6 416 272 416c-8.8 0-16-7.2-16-16s7.2-16 16-16l16 0 64 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0-16 0-78.3 0c-29.1 0-57.3 9.9-80 28L68.8 384 32 384c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l160 0 160.5 0c29 0 57.3-9.3 80.7-26.5l126.6-93.3zm-367-8.2l.9 0c0 0 0 0 0 0c-.3 0-.6 0-.9 0z" />
+                </svg></button>
+            <button class="btn">Adopt <i class="fa-solid fa-shield-dog"></i></button>
+            <button class="btn">Volunteer <i class="fa-solid fa-handshake-angle"></i></button>
+        </div>
     </section>
 
-    <section class="section">
+    <section id="work" class="section">
         <h2>GLIMPSES OF OUR WORK</h2>
         <div class="gallery">
-            <img src="https://via.placeholder.com/100" alt="Work1">
-            <img src="https://via.placeholder.com/100" alt="Work2">
-            <img src="https://via.placeholder.com/100" alt="Work3">
+            <blockquote class="instagram-media"
+                data-instgrm-permalink="https://www.instagram.com/p/DIdetItv2Qp/?igsh=MXFzeG4zNThlN2hyZg=="
+                data-instgrm-version="14"></blockquote>
+            <blockquote class="instagram-media"
+                data-instgrm-permalink="https://www.instagram.com/p/DIcAlTWO7Lk/?igsh=MTI0ajZ6aXowd3M0OA=="
+                data-instgrm-version="14"></blockquote>
+            <blockquote class="instagram-media"
+                data-instgrm-permalink="https://www.instagram.com/reel/DHil15DTkGk/?igsh=MXJ3MmY2OW0yeHQ2ag=="
+                data-instgrm-version="14"></blockquote>
         </div>
-        <button class="btn">Explore</button>
+        <button class="btn">Explore <i class="fa fa-external-link" aria-hidden="true"></i></button>
     </section>
 
     <footer>
@@ -105,12 +134,19 @@
         <p>Website designed by Himen Narzari, MCA – Tezpur University</p>
         <p>&copy; 2025 We Animals Tezpur. All rights reserved.</p>
         <p>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/WE.animalsfoundation/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/we.animals.tezpur/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/@weanimalstezpur?si=EuKfE5S5jquA2d9q" target="_blank"><i
+                    class="fab fa-youtube"></i></a>
         </p>
     </footer>
-    <script src="script.js"></script>
+    <script async src="//www.instagram.com/embed.js"></script>
+    <script>
+        window.addEventListener("load", () => {
+            document.getElementById("preloader").style.display = "none";
+        });
+    </script>
+
 </body>
 
 </html>
