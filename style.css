@@ -320,6 +320,10 @@ footer a {
     color: #000;
 }
 
+.footer-logo i{
+    font-size: 20px;
+}
+
 @media (max-width: 1320px) {
     .about-section {
         flex-direction: column;
