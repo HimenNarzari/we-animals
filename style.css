@@ -5,6 +5,15 @@
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+  body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;     /* Firefox */
+  }  
+
 #preloader {
     position: fixed;
     top: 0;
@@ -295,7 +304,7 @@ h3 span {
 }
 
 .dogs {
-    padding-top:50px;
+    padding-top: 50px;
     width: 100%;
     display: flex;
     align-items: flex-end;
@@ -327,8 +336,9 @@ h3 span {
     margin: 10px;
 }
 
-#work{
-    padding-top:100px;
+#work {
+    padding-top: 150px;
+    margin-bottom: 50px;
 }
 
 .gallery {
@@ -454,6 +464,10 @@ footer a {
 
     .dogs img {
         width: 80%;
+    }
+
+    #work {
+        padding-top:50px;
     }
 
 }
