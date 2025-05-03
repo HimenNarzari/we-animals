@@ -1,3 +1,8 @@
+window.addEventListener("load", () => {
+    document.getElementById("preloader").style.display = "none";
+});
+
+
 const counters = document.querySelectorAll('.count');
 
 const options = {
@@ -35,3 +40,5 @@ const observer = new IntersectionObserver((entries, observer) => {
 counters.forEach(counter => {
   observer.observe(counter);
 });
+
+
