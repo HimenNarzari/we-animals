@@ -16,51 +16,72 @@
     justify-content: center;
     align-items: center;
     z-index: 9999;
-  }
-  
-  .preloader-content {
+}
+
+.preloader-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  #preloader img {
+}
+
+#preloader img {
     width: 100%;
     animation: bounce 1s ease-in-out infinite;
-  }
-  
-  .loading-text {
+}
+
+.loading-text {
     margin-top: 10px;
     font-size: 3rem;
     color: #444;
     font-weight: 500;
     font-family: sans-serif;
     animation: fadeText 1.5s ease-in-out infinite, slideUpDown 1.5s ease-in-out infinite;
-  }
-  
-  /* Fade in/out */
-  @keyframes fadeText {
-    0%, 100% { opacity: 0.3; }
-    50% { opacity: 1; }
-  }
-  
-  /* Subtle vertical text movement */
-  @keyframes slideUpDown {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-5px); }
-  }
-  
-  /* Bounce animation for the GIF */
-  @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-  }
-  
+}
+
+/* Fade in/out */
+@keyframes fadeText {
+
+    0%,
+    100% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Subtle vertical text movement */
+@keyframes slideUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Bounce animation for the GIF */
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
 
 
 body {
     position: relative;
-    width:100%;
+    width: 100%;
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -91,6 +112,27 @@ header nav a {
     color: white;
     margin: 0 10px;
     text-decoration: none;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    /* Adjust thickness of the underline */
+    background-color: #e40f24;
+    /* Underline color */
+    transition: all 0.3s ease;
+    /* Smooth transition */
+}
+
+nav a:hover::after {
+    left: 0;
+    width: 105%;
+    /* Extend to full width */
 }
 
 .btn svg {
@@ -131,7 +173,7 @@ iframe {
 }
 
 .section {
-    padding: 40px 10%;
+    padding: 50px 10%;
     text-align: center;
 }
 
@@ -176,13 +218,13 @@ h2 {
     margin: 30px
 }
 
-h3{
+h3 {
     font-size: 30px;
 }
 
 h3 span {
     color: #fecd2f;
-    font-size:30px;
+    font-size: 30px;
 }
 
 .impact {
@@ -203,11 +245,11 @@ h3 span {
     flex-direction: column;
 }
 
-.impact div p{
+.impact div p {
     text-align: center;
 }
 
-.impact div .fa-solid{
+.impact div .fa-solid {
     color: #fe2f2f;
 }
 
@@ -252,56 +294,60 @@ h3 span {
     font-weight: 600;
 }
 
-.dogs{
-    
+.dogs {
+    padding-top:50px;
     width: 100%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
 }
 
-.dogs img{
-    width:50%;
+.dogs img {
+    width: 50%;
 }
 
 .help {
-    background-color:#fecd2f;
+    background-color: #fecd2f;
     background-repeat: no-repeat;
     padding: 30px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height:fit-content;
+    height: fit-content;
 }
 
-.help-btn-container{
+.help-btn-container {
     display: flex;
     flex-direction: row;
-    margin-top:20px;
+    margin-top: 20px;
 }
 
 .help .btn {
     margin: 10px;
 }
 
+#work{
+    padding-top:100px;
+}
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 16px;
-  
-    align-items: start; 
+
+    align-items: start;
     place-items: center;
-    width:100%;
-  }
+    width: 100%;
+}
 
 /* .gallery img {
     width: 100px;
     border-radius: 8px;
 } */
 
-.instagram-media{
-    height:550px;
+.instagram-media {
+    height: 550px;
 }
 
 footer {
@@ -320,7 +366,7 @@ footer a {
     color: #000;
 }
 
-.footer-logo i{
+.footer-logo i {
     font-size: 20px;
 }
 
@@ -340,12 +386,16 @@ footer a {
         margin-bottom: 20px;
     }
 
-    .dogs img{
-        width:65%;
+    .dogs img {
+        width: 65%;
     }
 
+    nav a:hover::after {
+        left: 0;
+        width: 0%;
+        /* Extend to full width */
+    }
 
-    
 }
 
 @media (max-width: 768px) {
@@ -402,8 +452,8 @@ footer a {
         padding-left: 0;
     }
 
-    .dogs img{
-        width:80%;
+    .dogs img {
+        width: 80%;
     }
- 
+
 }
