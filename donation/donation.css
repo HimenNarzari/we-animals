@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding-left: 0;
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+
+/* Fade in/out */
+@keyframes fadeText {
+
+    0%,
+    100% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Subtle vertical text movement */
+@keyframes slideUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Bounce animation for the GIF */
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+
+body {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@font-face {
+    font-family: 'Darling Coffee';
+    src: url('darling_coffee/Darling Coffee.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* navbar */
+
+header {
+    background: #000;
+    color: white;
+    padding: 10px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div img {
+    width: 80px;
+}
+
+header nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    /* Adjust thickness of the underline */
+    background-color: #e40f24;
+    /* Underline color */
+    transition: all 0.3s ease;
+    /* Smooth transition */
+}
+
+nav a:hover::after {
+    left: 0;
+    width: 105%;
+    /* Extend to full width */
+}
+.btn {
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn svg {
+    fill: white;
+    width: 15px;
+    padding-left: 5px;
+
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
