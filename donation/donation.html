@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donation</title>
     <link rel="stylesheet" href="../style.css" class="css">
-     <link rel="icon" href="../we-animals-logo.png" type="image/png">
+    <link rel="stylesheet" href="donation.css" class="css">
+    <link rel="icon" href="../we-animals-logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -21,14 +23,129 @@
             <a href="../#dog">Help us</a>
             <a href="../#work">Our work</a>
 
-            <button class="btn">Donate<svg
-                    xmlns="http://www.w3.org/2000/svg"
+            <button class="btn">Donate<svg xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
                     <path
                         d="M224 24l0 56-56 0c-13.3 0-24 10.7-24 24l0 48c0 13.3 10.7 24 24 24l56 0 0 56c0 13.3 10.7 24 24 24l48 0c13.3 0 24-10.7 24-24l0-56 56 0c13.3 0 24-10.7 24-24l0-48c0-13.3-10.7-24-24-24l-56 0 0-56c0-13.3-10.7-24-24-24L248 0c-13.3 0-24 10.7-24 24zM559.7 392.2c17.8-13.1 21.6-38.1 8.5-55.9s-38.1-21.6-55.9-8.5L392.6 416 272 416c-8.8 0-16-7.2-16-16s7.2-16 16-16l16 0 64 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0-16 0-78.3 0c-29.1 0-57.3 9.9-80 28L68.8 384 32 384c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l160 0 160.5 0c29 0 57.3-9.3 80.7-26.5l126.6-93.3zm-367-8.2l.9 0c0 0 0 0 0 0c-.3 0-.6 0-.9 0z" />
                 </svg></button>
         </nav>
     </header>
+
+    <!-- Hero Section -->
+    <section class="donate-hero">
+        <div class="hero-text">
+            <h1>Make a Life-Saving Difference</h1>
+            <p>Your donation helps rescue, heal, and protect animals in need.</p>
+            <p>Whether it's providing emergency medical care, feeding a hungry stray, or giving a second chance to an
+                abandoned pet, every contribution matters.</p>
+            <p><strong>Be their voice. Be their hope. Donate today.</strong></p>
+        </div>
+        <div class="hero-img">
+            <div class="puppy">
+                <img style="width:150px;" src="puppy.png" alt="">
+            </div>
+            <div class="big-dog">
+                <img src="peeking-dog.png" alt="peeking-dog">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Why Donate Section -->
+    <section class="why-donate">
+        <h2>Why Your Donation Matters</h2>
+        <div class="donate-reasons">
+            <div class="reason-card">
+                <h3><img src="rescue-icon.png" alt="rescue-icon"> Rescue Missions</h3>
+                <p>Enable us to reach injured, abandoned, or abused animals swiftly and safely.</p>
+            </div>
+            <div class="reason-card">
+                <h3><img src="medical-treatment.png" alt="medical-treatment"> Medical Treatment</h3>
+                <p>Support life-saving surgeries, vaccinations, and long-term care.</p>
+            </div>
+            <div class="reason-card">
+                <h3><img src="dog-shelter.png" alt="dog-shelter"> Shelter & Food</h3>
+                <p>Help us provide daily meals, warmth, and comfort to rescued animals.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Donation Form -->
+    <section class="donation-form-section">
+        <h2>Make a Donation</h2>
+        <form class="donation-form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="you@example.com" required>
+
+            <!-- <label for="currency">Currency</label>
+            <select id="currency">
+                <option value="INR">₹ INR</option>
+                <option value="USD">$ USD</option>
+                <option value="EUR">€ EUR</option>
+            </select> -->
+
+            <label for="amount">Donation Amount (₹)</label>
+            <input type="number" id="amount" min="0" placeholder="500" required>
+
+            <label for="message">Message (optional)</label>
+            <textarea id="message" rows="4" placeholder="Leave a message..."></textarea>
+
+            <button class="btn">Donate<svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path
+                        d="M224 24l0 56-56 0c-13.3 0-24 10.7-24 24l0 48c0 13.3 10.7 24 24 24l56 0 0 56c0 13.3 10.7 24 24 24l48 0c13.3 0 24-10.7 24-24l0-56 56 0c13.3 0 24-10.7 24-24l0-48c0-13.3-10.7-24-24-24l-56 0 0-56c0-13.3-10.7-24-24-24L248 0c-13.3 0-24 10.7-24 24zM559.7 392.2c17.8-13.1 21.6-38.1 8.5-55.9s-38.1-21.6-55.9-8.5L392.6 416 272 416c-8.8 0-16-7.2-16-16s7.2-16 16-16l16 0 64 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0-16 0-78.3 0c-29.1 0-57.3 9.9-80 28L68.8 384 32 384c-17.7 0-32 14.3-32 32l0 64c0 17.7 14.3 32 32 32l160 0 160.5 0c29 0 57.3-9.3 80.7-26.5l126.6-93.3zm-367-8.2l.9 0c0 0 0 0 0 0c-.3 0-.6 0-.9 0z" />
+                </svg></button>
+        </form>
+        <section class="inkind-donation">
+            <h2>Prefer to Donate in Kind?</h2>
+            <p>We gladly accept pet food, medicines, old blankets, feeding bowls, and other useful items.</p>
+            <p><strong>Drop-off Location:</strong> We Animals | Parbati Nagar, Tezpur, Sonitpur, Assam<br>
+                <strong>Or Contact:</strong> +91-86389-86630 / 78965-03844
+            </p>
+            <a href="tel:+917086667640"><button id="call" class="btn"><i class="fa-solid fa-phone"></i>
+                    Call</button></a>
+            <button id="wa-chat" class="btn"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</button>
+        </section>
+    </section>
+
+    <!-- FAQs -->
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq">
+            <h4>Is my donation tax-deductible?</h4>
+            <p>Currently, donations are not tax-exempt. We’re working toward this for the future.</p>
+        </div>
+        <div class="faq">
+            <h4>Can I donate in someone’s name?</h4>
+            <p>Yes, please include the name and occasion in the message field of the form.</p>
+        </div>
+        <div class="faq">
+            <h4>How can I track the impact of my donation?</h4>
+            <p>Follow our social media and newsletter for regular rescue updates.</p>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <footer>
+        <p><strong>We Animals Tezpur</strong> – Rescuing and caring for the voiceless with love and dedication.</p>
+        <p><strong>Contact:</strong> Tezpur, Assam, India | Email: weanimalstezpur@gmail.com</p>
+        <p>Website designed by Himen Narzari, MCA – Tezpur University</p>
+        <p>&copy; 2025 We Animals Tezpur. All rights reserved.</p>
+        <p>
+            <a class="footer-logo" href="https://www.facebook.com/WE.animalsfoundation/" target="_blank"><i
+                    class="fa-brands fa-facebook"></i></a>
+            <a class="footer-logo" href="https://www.instagram.com/we.animals.tezpur/" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a class="footer-logo" href="https://youtube.com/@weanimalstezpur?si=EuKfE5S5jquA2d9q" target="_blank"><i
+                    class="fa-brands fa-youtube"></i></a>
+        </p>
+    </footer>
+    <script src="donation.js"></script>
 </body>
 
 </html>
