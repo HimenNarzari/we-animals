@@ -5,49 +5,9 @@
     scroll-behavior: smooth;
 }
 
-/* Fade in/out */
-@keyframes fadeText {
-
-    0%,
-    100% {
-        opacity: 0.3;
-    }
-
-    50% {
-        opacity: 1;
-    }
-}
-
-/* Subtle vertical text movement */
-@keyframes slideUpDown {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-5px);
-    }
-}
-
-/* Bounce animation for the GIF */
-@keyframes bounce {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-10px);
-    }
-}
-
-
 
 body {
-    position: relative;
+    line-height: 1.6;
     width: 100%;
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -99,8 +59,9 @@ nav a::after {
 nav a:hover::after {
     left: 0;
     width: 105%;
-    /* Extend to full width */
+    /* Extend to full width + 5%*/
 }
+
 .btn {
     background: red;
     color: white;
@@ -126,4 +87,198 @@ nav a:hover::after {
     font-size: 24px;
     color: white;
     cursor: pointer;
+}
+
+/* Sections */
+section {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+/* Hero */
+.donate-hero {
+    background:#fffaf1;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    height:fit-content;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.hero-text{
+    width:70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding:0 10%
+}
+
+.hero-text strong{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.hero-img{
+    width:30%;
+    height:400px;
+    display: flex;
+    flex-direction: row;
+}
+
+.puppy{
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.big-dog{
+    width:50%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.big-dog img{
+    height:100%;
+}
+
+.donate-hero h1 {
+    font-size: 2.8rem;
+    color:#e40f24;
+    font-weight: 750;
+    width: 100%;
+    text-align: center;
+}
+
+.donate-hero p {
+    font-size: 1.2rem;
+    color:black;
+    font-weight: 600;
+    width:100%;
+    text-align: center;
+}
+
+/* Why Donate */
+.why-donate {
+    background-color: #fff;
+}
+
+.donate-reasons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.reason-card {
+    flex: 1 1 250px;
+    background-color:#fecd2f;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.reason-card img{
+    width:40px;
+}
+
+.reason-card p{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Impact */
+.impact-section {
+    background-color: #fef1e6;
+}
+
+.impact-points {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.impact-item {
+    font-size: 1.1rem;
+}
+
+/* Donation Form */
+.donation-form-section {
+    background-color: #fff;
+}
+
+.donation-form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.donation-form label {
+    display: block;
+    margin-top: 20px;
+}
+
+.donation-form input,
+.donation-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.inkind-donation {
+    padding: 40px 20px;
+    margin-top: 40px;
+  }
+  .inkind-donation p {
+    margin: 10px 0;
+  }
+
+  #call {
+    background-color: #02A2F8;
+  }
+
+  #wa-chat{
+    background-color: #25D366;
+  }
+
+/* FAQ */
+.faq-section {
+    background-color: #fffaf1;
+}
+
+.faq {
+    max-width: 700px;
+    margin: 10px auto;
+    text-align: left;
+}
+
+.faq h4 {
+    margin-bottom: 5px;
+}
+
+@media(max-width:768px){
+    .donate-hero{
+        flex-direction: column;
+        padding:0;
+    }
+    .hero-img{
+        width: 100%;
+    }
+    .hero-text{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding:8% 0;
+    }
+    .hero-text p, .hero-text h1{
+        width:85%;
+    }
 }
